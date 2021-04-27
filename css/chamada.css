@@ -1,0 +1,117 @@
+.chamada{
+    background: linear-gradient( rgb(235, 233, 233) 5% ,rgb(247, 247, 247) );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 2.5rem 0 2.5rem;
+    line-height: normal;
+    
+}
+
+
+
+
+
+.chamada__imagem--frente{
+width: 100vw;
+margin-top: 3rem;
+margin-bottom: -3rem;
+box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.411);
+}
+
+.chamada__titulo{
+     
+    width: 300px;
+    font-weight: 700;
+    font-size: 1.75rem;text-transform: uppercase;
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid black;
+
+}
+
+.chamada__texto{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.chamada__botao{
+    color: white;
+    font-weight: 400;
+    font-size: 1.3rem;
+    width: 100%;
+    border-radius: 20px;
+    background-color: red;
+    border-color: red;
+    display: inline-block;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.342);
+    transition: 1s all ease-in-out;
+
+   
+  
+}
+
+.chamada__botao:hover{
+    background-color: rgb(128, 18, 18);
+    border-color: rgb(128, 18, 18);
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px){
+    .chamada{
+        margin-bottom: 0rem;
+    }
+
+    .chamada__titulo{
+        font-size: 2.5rem;
+        width: 600px;
+
+    }
+
+    
+    .chamada__imagem--frente{
+        margin-bottom: 0rem;
+
+    }
+
+    .chamada__imagem--frente{
+        max-width:720px;
+        transition: 2s all ease-in-out;
+        
+    }
+}
+
+@media screen and (min-width:1024px){
+
+    .chamada{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .chamada__imagem--frente{
+        width: 50%;
+    }
+
+   
+
+.chamada__titulo{
+    text-align:center;
+    max-width: 400px;
+    
+}
+
+.chamada__texto{
+    text-align: center;
+}
+
+    .chamada__imagem--frente{
+        display: block;
+        
+    }
+
+    .chamada__imagem--frente:hover{
+        transform: scale(1.1);
+       
+    }
+}
+
